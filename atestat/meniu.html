@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renașterea</title>
+    <style>
+        body {
+            font-family: "Georgia", serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: white; /* Text alb pentru contrast */
+            position: relative;
+        }
+        
+        /* Fundal cu imagine semi-transparentă */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('img/renasterea1.jpg') no-repeat center center/cover;
+            opacity: 0.5; /* 50% opacitate */
+            z-index: -1;
+        }
+        
+        /* Stilizare meniu */
+        .meniu {
+            background-color: rgba(139, 0, 0, 0.8); /* Roșu închis cu transparență */
+            padding: 15px;
+        }
+        
+        .meniu a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+            font-size: 18px;
+        }
+        
+        .meniu a:hover {
+            background-color: rgba(178, 34, 34, 0.8);
+        }
+        
+        /* Titlu stilizat */
+        h1 {
+            font-size: 48px;
+            font-family: "Times New Roman", serif;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px black; /* Pentru contrast mai bun */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Meniu navigațional -->
+    <div class="meniu">
+        <a href="pagina_de_cultura.html">Pagina de cultură</a>
+        <a href="artisti_renascentisti.html">Artiștii renașcentiști</a>
+        <a href="opere_reprezentative.html">Operele reprezentative</a>
+        <a href="muzee_obiective_turistice.html">Muzee și obiective turistice</a>
+    </div>
+
+    <!-- Titlu -->
+    <h1>Renașterea</h1>
+
+</body>
+</html>
